@@ -4,7 +4,7 @@ XcodePath=`xcode-select --print-path`
 
 #build distcc
 cd distcc
-make clean
+./configure --disable-Werror
 make
 
 #link to xcode
